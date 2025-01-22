@@ -1,0 +1,19 @@
+print("конвертации валют")
+num1 = float(input("сумма для конвертации: "))
+print("1 - Рубли (RUB)\n2 - Доллары (USD)\n3 - Евро (EUR)\n4 - Тенге (KGZ")
+num2 = int(input("выберите номер валюты: "))
+
+if num2 == 1:
+    result = num1 * 1.3
+    print(f"{num1} RUB = {result:.2f} сомов")
+elif num2 == 2:
+    result = num1 * 87.5
+    print(f"{num1} USD = {result:.2f} сомов")
+elif num2 == 3:
+    result = num1 * 94.0
+    print(f"{num1} EUR = {result:.2f} сомов")
+elif num2 == 4:
+    result = num1 * 0.2
+    print(f"{num1} KZT = {result:.2f} сомов")
+else:
+    print("неверный выбор валюты")
